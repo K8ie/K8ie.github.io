@@ -1,0 +1,7 @@
+<link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+
+<div class="fading-text-container" *ngFor="let item of characterArray">
+    <span *ngIf="item !=' '">{{item}}</span>
+    <span *ngIf="item ===' '">&nbsp;</span>
+
+</div>

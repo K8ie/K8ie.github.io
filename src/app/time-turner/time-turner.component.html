@@ -1,0 +1,65 @@
+<div class="time-images-box">
+  <div *ngIf="PERIOD === 'traveling'">
+    <app-fading-text-box [isShown]="true" [text]="travelingString">
+    </app-fading-text-box>
+
+    <img width="180px" src="../../assets/otherglobe.gif" style="float: right" />
+  </div>
+
+  <div *ngIf="PERIOD === 'capco'">
+    <app-fading-text-box [isShown]="true" [text]="capcoString">
+    </app-fading-text-box>
+  </div>
+
+  <div *ngIf="PERIOD === 'psi2'">
+    <app-fading-text-box [isShown]="true" [text]="psi2String">
+    </app-fading-text-box>
+  </div>
+
+  <div *ngIf="PERIOD === 'psi'">
+    <app-fading-text-box [isShown]="true" [text]="psiString">
+    </app-fading-text-box>
+  </div>
+
+  <div *ngIf="PERIOD === 'birth'">
+    <app-fading-text-box [isShown]="true" [text]="birthString">
+    </app-fading-text-box>
+  </div>
+
+  <div *ngIf="PERIOD === 'nothing'">
+    <app-fading-text-box [isShown]="true" [text]="nothingString">
+    </app-fading-text-box>
+  </div>
+
+  <div *ngIf="PERIOD === 'efz'">
+    <app-fading-text-box [isShown]="true" [text]="efzString">
+    </app-fading-text-box>
+  </div>
+</div>
+
+<div class="time-turner-box">
+  <div class="slidecontainer">
+    <input
+      type="range"
+      min="1"
+      max="100"
+      value="5"
+      class="slider"
+      id="myRange"
+      (mousedown)="setTrue()"
+      (mouseup)="setFalse()"
+    />
+  </div>
+
+  <div class="years">
+    <h3>2022</h3>
+
+    <h3>2021</h3>
+
+    <h3>2020</h3>
+
+    <h3>2016</h3>
+
+    <h3>1998</h3>
+  </div>
+</div>

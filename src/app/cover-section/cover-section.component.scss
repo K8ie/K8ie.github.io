@@ -1,0 +1,167 @@
+.cover-section-box {
+  text-align: center;
+
+  p {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 47px;
+    margin-top: 0px;
+  }
+  h1 {
+    font-size: 115px;
+    margin: 0;
+  }
+
+  .hidden-wrapper {
+    display: none;
+  }
+
+  //move title for small screens
+  @media screen and (max-width: 80em) {
+    .wrapper {
+      display: none;
+    }
+
+    .hidden-wrapper {
+      display: flex;
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+
+  //adapt for medium screens
+  @media screen and (min-width: 80em) {
+    .wrapper {
+      margin-top: 5%;
+    }
+    .first {
+      padding-top: 21%;
+      margin-left: -61px;
+    }
+    .second {
+      margin-left: 2%;
+      float: left;
+      margin-bottom: 0%;
+    }
+
+    .third {
+      margin-top: 0%;
+      margin-left: 6%;
+    }
+  }
+
+  //adapt for large screens
+  @media screen and (min-width: 90em) {
+    .wrapper {
+      margin-top: 0;
+    }
+  }
+
+  //adapt for larger screens
+
+  @media screen and (min-width: 100em) {
+    p {
+      font-size: 15px;
+    }
+    .wrapper {
+      margin-top: -3%;
+    }
+    .third {
+      float: left;
+      margin-top: 0% !important;
+    }
+  }
+
+  //no one should have to zoom this close, get glases
+  @media screen and (min-width: 120em) {
+    .wrapper {
+      margin-top: -10%;
+    }
+
+    .third {
+      float: left;
+      margin-top: 0% !important;
+    }
+  }
+
+  .first {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-left: -61px;
+    margin-bottom: 0;
+    padding-top: 22%;
+  }
+
+  .second {
+    margin-left: 2%;
+    float: left;
+    margin-bottom: 0%;
+  }
+
+  .third {
+    margin-top: 3%;
+  }
+
+  .main-section-box {
+    width: 95%;
+    float: right;
+
+    .articel-text {
+      p {
+        text-align: left;
+        font-size: 20px;
+        padding-right: 15%;
+        margin-top: 0;
+      }
+    }
+
+    .article-box {
+      margin-bottom: -4.5%;
+
+      h3 {
+        text-align: left;
+        margin-bottom: 2%;
+      }
+    }
+
+    .subtitle {
+      h1 {
+        font-size: 100px;
+        margin: 0;
+      }
+      h4 {
+        margin-top: -22px;
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+
+      @media screen and (max-width: 48em) {
+        h1 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 10px;
+        }
+      }
+    } // subtitle
+  } //main-section-box
+
+  .magical-cover-img {
+    align-items: center;
+    video {
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-self: center;
+    }
+  }
+}
+
+@media screen and (max-width: 80em) {
+  .magical-cover-img {
+    margin-top: 36%;
+  }
+}

@@ -1,0 +1,100 @@
+@keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 113px;
+  }
+}
+
+.house-container{
+
+  .house-icon {
+    width: 80px;
+  }
+
+}
+
+.house-box{
+  width: 75%;
+}
+
+.bar-container{
+    margin-bottom: 20px;
+
+    p{
+      font-size: 20px;
+      text-align: left;
+
+    }
+
+
+
+
+    .bar {
+      min-height: 50px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      width: calc(113px * 4);
+      @media only screen and (max-width: 450px) {
+        width: calc(113px * 3);
+      }
+      @media only screen and (max-width: 350px) {
+        width: calc(113px * 2);
+      }
+
+      //hufflepuff is default
+      box-shadow: 0px 10px 13px -6px rgba(44, 62, 80, 1);
+      background-color: #513b00;
+      background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        #ffbb00 40px,
+        #ffbb00 80px
+      );
+
+      animation: slide 4s linear infinite;
+      will-change: background-position;
+    }
+
+
+.ravenclaw{
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      #4900e5 40px,
+      #4900e5 80px
+    ) !important;
+    background-color: #1d005d !important;
+}
+.gryfindor{
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      #ff0037 40px,
+      #ff0037 80px
+    ) !important;
+    background-color: #520000 !important;
+}
+.slytherin{
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      #00ff4c 40px,
+      #00ff4c 80px
+    ) !important;
+    background-color: #004e17 !important;
+}
+
+
+
+}
+
+
+
+
+

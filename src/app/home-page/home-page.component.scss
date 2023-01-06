@@ -1,0 +1,308 @@
+.home-page {
+  text-align: center;
+  margin: 3%;
+  padding: 2%;
+  padding-left: 24px;
+  font-family: "Times New Roman", Times, serif;
+
+  p {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 47px;
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 115px;
+    margin: 0;
+  }
+
+  .home-page-border {
+    border: solid 5px black;
+  }
+
+  .rotated-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .rotated-title {
+    transform: rotate(-90deg);
+    float: left;
+    font-size: 70px;
+    margin-top: 0%;
+  }
+}
+
+.title-section-box {
+  .title {
+    border-top: solid black 7px;
+    border-bottom: solid black 7px;
+    border-style: double;
+    border-left: none;
+    border-right: none;
+
+    margin-top: 2%;
+    width: 98%;
+
+    .beguiling-title {
+      font-size: 32px;
+    }
+  }
+
+  .home-page-topics {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    line-height: 0.2px;
+
+    //for  now TODO: make meu funktional
+    user-select: none;
+
+    .menu-item {
+      background-color: var(--light-black);
+      color: white;
+      font-weight: bolder;
+      padding: 11px;
+      margin: 7px;
+    }
+  }
+}
+
+.exclusive-insight-section {
+  h1 {
+    font-size: 80px;
+    display: block;
+    margin-bottom: 2%;
+  }
+  margin-left: 3%;
+  margin-right: 3%;
+
+  .sorting-hat-results-box {
+    h2 {
+      font-size: 75px;
+    }
+
+    .sorting-hat-title {
+      text-align: left;
+      display: flex;
+      margin-left: -19%;
+      margin-top: 18%;
+    }
+
+    .sorting-hat-wrapper {
+      text-align: left;
+      padding: 6%;
+      margin-top: -54%;
+    }
+  }
+
+  .vertical-text-box {
+    text-align: left;
+
+    .vertical-text-wrapper {
+      float: right;
+      width: 100%;
+
+      padding: 4em;
+      padding-top: 0%;
+      padding-right: 25%;
+    }
+
+    .experience-section {
+      height: 60%;
+
+      h2 {
+        margin-right: 0;
+        margin: 0;
+        font-size: 70px;
+      }
+      h3 {
+        margin-right: 0;
+        margin: 0;
+        font-size: 39px;
+      }
+    }
+
+    li{
+      font-size: 20px;
+    }
+  }
+
+  .skills-section{
+    text-align: left;
+    width: 90%;
+    float: left;
+
+    h3{
+      font-size: 30px;
+    }
+
+    p{
+      padding: 3% 20% 6% 2%;
+    }
+
+    a{
+      font-size: 30px;
+    }
+    a:hover{
+      font-size: 50px;
+    }
+
+    .planning-spinner{
+      //display:none;
+      width: 75%;
+      margin-left: -15%;
+      user-select: none;
+    }
+
+  }
+
+
+}
+
+.time-machine{
+  margin-top: 60%;
+}
+
+
+@media screen and (max-width: 80em) {
+  .sorting-hat-title {
+    display: none !important;
+  }
+  .sorting-hat-wrapper {
+    padding: 20%;
+    margin-top: 0% !important;
+    margin-top: 0% !important;
+    margin-left: -5%;
+  }
+
+  .vertical-text-box {
+    .experience-section {
+      height: 84% !important;
+    }
+  }
+
+  .time-machine{
+    margin-top: 90% !important;
+  }
+
+
+
+}
+
+@media screen and (min-width: 81em) {
+  .sorting-hat-title {
+    text-align: left;
+    top: 0;
+    display: flex;
+    margin-left: -23% !important;
+  }
+
+  .sorting-hat-wrapper {
+    margin-left: 12%;
+  }
+
+  .vertical-text-box {
+    p {
+      font-size: 20px;
+    }
+
+    .experience-section {
+      height: 75% !important;
+
+      p {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 64px !important;
+      }
+      h3 {
+        font-size: 33px !important;
+      }
+    }
+  }
+
+  .time-machine{
+    width: 70%;
+  }
+
+}
+
+@media screen and (min-width: 90em) {
+  .vertical-text-box {
+    .experience-section {
+      height: 55% !important;
+    }
+  }
+  .sorting-hat-title {
+    margin-left: -21%;
+    text-align: left;
+    top: 0;
+    display: flex;
+    margin-top: 24% !important;
+
+    h2 {
+      font-size: 77px;
+    }
+  }
+
+  .sorting-hat-wrapper {
+    margin-top: -48%;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .sorting-hat-wrapper {
+    margin-top: -46% !important;
+    margin-left: 19% !important;
+  }
+
+  .sorting-hat-title {
+    margin-top: 18% !important;
+
+    h2 {
+      font-size: 100px !important;
+    }
+  }
+
+  .vertical-text-box {
+    p {
+      font-size: 30px;
+    }
+    .experience-section {
+      p {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 75px !important;
+      }
+      h3 {
+        font-size: 42px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .vertical-text-box {
+    p {
+      font-size: 30px;
+    }
+    .experience-section {
+      p {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 90px !important;
+      }
+      h3 {
+        font-size: 50px !important;
+      }
+    }
+  }
+}
