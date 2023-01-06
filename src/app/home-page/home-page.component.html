@@ -1,0 +1,200 @@
+<div class="pure-g home-page">
+  <div class="home-page-border">
+    <div class="title-section-box">
+      <div class="pure-u-lg-1-1 title">
+        <h1 class="floating">THE DAILY PROPHET</h1>
+        <h3 class="beguiling-title">
+          &#10040; The Wizzard Worlds Beguiling Broadsheet of choice &#10040;
+        </h3>
+      </div>
+
+      <div class="home-page-topics pure-u-lg-1-1 pure-u-1">
+        <div class="pure-u-lg-1-3">
+          <div class="menu-item">
+            <p>EXCLUSIVE</p>
+            <p>* Frontend Developer *</p>
+            <p>looking for next opportunity</p>
+          </div>
+        </div>
+
+        <div class="pure-u-lg-1-3">
+          <div class="menu-item">
+            <p>PROGRAMMING SKILLS</p>
+            <p>*** detailed insight ***</p>
+            <p>into expertice and skills</p>
+          </div>
+        </div>
+
+        <div class="pure-u-lg-1-3">
+          <div class="menu-item">
+            <p>GET IN TOUCH</p>
+            <p>*** send personal ***</p>
+            <p>Owl Messenger</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-cover-section></app-cover-section>
+
+    <div class="exclusive-insight-section pure-u-lg-1-1 pure-u-1">
+      <div class="pure-u-lg-2-3 pure-u-1 sorting-hat-results-box">
+        <div class="sorting-hat-title">
+          <h2 class="rotated-title">SORTING HAT <br />RESULTS</h2>
+        </div>
+
+        <div class="sorting-hat-wrapper">
+          <app-sorting-hat-results> </app-sorting-hat-results>
+        </div>
+
+        <div class="pure-u-lg-1-1 pure-u-1 skills-section">
+          <div class="pure-u-lg-1-3 pure-u-1 skills-box">
+            <h3>Programming Skills</h3>
+            <p>
+              Has helped implementing various projects using es6, html5 and
+              css3. Basic experience with Java and C# Testing and Debugging
+              Applications Maintains clean and conventional code and is educaded
+              on user ergonomics regarding UI/UX Dsign Is educaded on conzepts
+              like TTD, OOP, FP, Design Patterns, Variable Declaration and more
+            </p>
+
+            <p *ngIf="!showProgramming">Revelio <a (click)="toggleProgramming()">&#xbb;</a></p>
+            <p *ngIf="showProgramming">Evanesco  <a (click)="toggleProgramming()">&#xab;</a></p>
+
+
+            <div class="planning-spinner" *ngIf="showProgramming">
+             <app-spinning-text [container]="'programming'"></app-spinning-text>
+           </div>
+
+          </div>
+          <div class="pure-u-lg-1-3 pure-u-1 skills-box">
+            <h3>Planning and Collaboration</h3>
+            <p>
+              Experience working with agle project methods like Scrum
+              collaborating and sharing progress throught Atlassian tools
+              (Bitbucket, Confluence and Jira) and Docker designing mock-up's ,
+              writing szenarios, documenting progress Responsive Design Has
+              regularly shared, maintained and obtained code using git. (e.g
+              GitHub)
+            </p>
+
+            <p *ngIf="!showPlanning">Revelio <a (click)="togglePlanning()">&#xbb;</a></p>
+            <p *ngIf="showPlanning">Evanesco  <a (click)="togglePlanning()">&#xab;</a></p>
+
+
+            <div class="planning-spinner" *ngIf="showPlanning">
+             <app-spinning-text [container]="'planning'"></app-spinning-text>
+           </div>
+
+          </div>
+          <div class="pure-u-lg-1-3 pure-u-1 skills-box">
+            <h3>Web Development</h3>
+            <p>
+              Has implemented various projects using Javascript frameworks like
+              Typescipt and Angular Has implemented adaptations on existing API
+              in Java using Spring boot Experience working with popular
+              Lirbaries like React, jQuery, mocha, chai and Jasmine has
+              implemented various projects using CSS Tools/Frameworks like Sass,
+              Tailwind, Bootstrap and Purecss A lot of passion for everything
+              online and webdesign and ambition for problem-solving
+            </p>
+            <p *ngIf="!showWebDev">Revelio <a (click)="toggleWebDev()">&#xbb;</a></p>
+            <p *ngIf="showWebDev">Evanesco  <a (click)="toggleWebDev()">&#xab;</a></p>
+
+
+            <div class="planning-spinner" *ngIf="showWebDev">
+             <app-spinning-text [container]="'webstuff'"></app-spinning-text>
+           </div>
+          </div>
+        </div>
+
+        <div class="pure-u-lg-1-1 pure-u-1 timme-machine">
+          <app-time-turner></app-time-turner>
+        </div>
+
+      </div>
+
+      <div class="pure-u-lg-1-3 pure-u-1-3 vertical-text-box">
+        <div class="vertical-text-wrapper">
+          <div class="upper-text pure-u-lg-1-1 pure-u-1">
+            <p>
+              As a young and ambitious developer, I am looking for a new
+              opportunity in which I can pursue my passion for IT and at the
+              same time offers challenge and room for further education. In
+              addition to good technical know-how, my strengths lie in web
+              design and the graphic presentation of data. In my previous
+              employment at PSI I turned research data into visually appealing
+              and intuitive graphs and statistics. And at CAPCO I was
+              responsible for the design and implementation of various UIX/GUIS.
+              When I write applications, the user experience is always the top
+              priority. It is very important to me that the user comes to the
+              desired result through a natural and easy-to-navigate design.
+            </p>
+
+            <hr />
+          </div>
+
+          <div class="experience-section rotated-text pure-u-lg-1-1 pure-u-1">
+            <h2>PREVIOUS EXPERIENCE</h2>
+
+            <h3>EMPLOYMENT HISTORY</h3>
+
+            <p>
+              Having worked in two vastly different branches of IT , (that being
+              science and FinTech ) I’ve learned to be flexible with
+              expectations and efficient in my work- and communication methods.
+              I have experience working in a small and detail-oriented team and
+              have also worked on larger deadline-driven projects. In all cases,
+              the companys Ive worked for had international clients which has
+              gotten me quite experienced at english and technichal commication.
+            </p>
+          </div>
+
+          <div class="employment-content pure-u-lg-1-1 pure-u-1">
+            <h1 class="floating">PSI</h1>
+            <p>
+              Paul Scherrer Institute PSI is a research facility for nature and
+              engineering sciences. At PSI, they conduct cutting-edge research
+              in the fields of future technologies, energy and climate, health
+              innovation and the fundamentals of nature. Through theoretical and
+              applied research, we work on sustainable solutions for key issues
+              in society, science and business.
+            </p>
+
+            <h4>Projects and Tasks</h4>
+
+            <ul>
+              <li>Graduating my EFZ with good grades and a well developed understanding of Application Development</li>
+              <li>Visual Presentation of web formatted Research Data for Surveilance Motitors</li>
+              <li>Monthly implementation, documentation and testing of Educational Projects</li>
+              <li>First and Second LvL Support</li>
+              <li>Extending and Fixing PSI Home Page</li>
+            </ul>
+
+            <hr />
+            <h1 class="floating">CAPCO</h1>
+            <p>
+              Capco is a business and technology management consultancy owned by
+              Wipro, operating primarily in the financial services and energy
+              sectors. Capco's operational headquarters are in London, England,
+              with 32 offices across the Americas, Europe, and Asia
+            </p>
+
+            <h4>Projects and Tasks</h4>
+
+            <ul>
+              <li>Responsible for upkeeping Scrum Project-documentation through Atlassian tools like Jira and Confluence</li>
+              <li>Responsible for Communication between Development Team and Customer</li>
+              <li>Planning, Implementation and Testing of Application requierments </li>
+              <li>Extending and Fixing CAPCO Home Page</li>
+              <li>Responsible for Interviewing Applicants for our Team</li>
+              <li>Implementation of Prototypes to showcase funtionality to client and ensure  communication was succesfull</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
